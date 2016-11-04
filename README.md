@@ -15,8 +15,8 @@ In a F# project (.fsproj)
         <Reference Include="node_modules/fable-core/Fable.Core.dll" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="node_modules/fable-import-express/Fable.Import.Redux.fs" />
-        <Compile Include="node_modules/fable-import-express/Fable.Helpers.Redux.fs" />
+        <Compile Include="node_modules/fable-import-redux/Fable.Import.Redux.fs" />
+        <Compile Include="node_modules/fable-import-redux/Fable.Helpers.Redux.fs" />
     </ItemGroup>
 
 ## Related projects
