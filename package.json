@@ -1,0 +1,16 @@
+{
+  "name": "fable-import-redux",
+  "version": "0.1.0",
+  "description": "Fable bindings for Redux",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "F#",
+    "Fable",
+    "React",
+    "Redux"
+  ],
+  "author": "Fredrik Forssen",
+  "license": "MIT"
+}
