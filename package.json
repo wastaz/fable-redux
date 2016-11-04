@@ -12,5 +12,9 @@
     "Redux"
   ],
   "author": "Fredrik Forssen",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wastaz/fable-import-redux"
+  }
 }
