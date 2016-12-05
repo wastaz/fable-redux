@@ -24,10 +24,10 @@ module Redux =
     type Middleware = IUntypedStore -> (obj -> unit) -> obj -> unit
 
     type Globals = 
-        member __.applyMiddleware([<System.ParamArray>] middlewares : Middleware [] ) = jsNative
-        member __.createStore(reducer : Reducer<'TState, 'TAction>, ?initialState : 'TState, ?middleware : Middleware) : IStore<'TState, 'TAction> = jsNative
+        abstract applyMiddleware : [<System.ParamArray>] middlewares : Middleware [] -> Middleware
+        abstract createStore : reducer : Reducer<'TState, 'TAction> * ?initialState : 'TState * ?middleware : Middleware -> IStore<'TState, 'TAction>
 
 [<AutoOpen>]
 module Redux_Extensions =
-    let [<Import("*","redux")>] Redux: Redux.Globals = failwith "JS only"
+    let [<Import("*","redux")>] Redux: Redux.Globals = jsNative
     
