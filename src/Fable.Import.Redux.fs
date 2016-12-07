@@ -7,13 +7,13 @@ module Redux =
     type Listener = unit -> unit
     type UnSubscribe = unit -> unit
 
-    type Reducer<'TState, 'TAction> = System.Func<'TState, 'TAction, 'TState>
+    type Reducer<'TState, [<Pojo>] 'TAction> = System.Func<'TState, 'TAction, 'TState>
     
     type IUntypedStore = 
         abstract getState : unit -> obj
         abstract dispatch : obj -> unit
 
-    type IStore<'TState, 'TAction> = 
+    type IStore<'TState, [<Pojo>] 'TAction> = 
         inherit IUntypedStore
         abstract dispatch : 'TAction -> unit
         abstract getState : unit -> 'TState
