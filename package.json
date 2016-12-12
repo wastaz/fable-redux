@@ -1,7 +1,7 @@
 {
-  "name": "fable-import-redux",
-  "version": "0.1.2",
-  "description": "Fable bindings for Redux",
+  "name": "fable-redux",
+  "version": "0.1.0",
+  "description": "Fable bindings and helpers for Redux",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node build"
@@ -16,7 +16,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wastaz/fable-import-redux"
+    "url": "https://github.com/wastaz/fable-redux"
   },
   "devDependencies": {
     "fable-compiler": "0.7.16",
