@@ -1,5 +1,5 @@
 {
-  "projFile": "src/Fable.Import.Redux.fsproj",
+  "projFile": "src/Fable.Redux.fsproj",
   "outDir": "npm",
   "dll": true,
   "sourceMaps": true,
